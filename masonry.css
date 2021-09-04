@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(24, 1fr);
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  gap: 5px;
+  grid-template-areas:
+    "one one one one one one one one six six six six seven seven seven seven ten ten ten ten ten ten ten ten"
+    "one one one one one one one one six six six six seven seven seven seven ten ten ten ten ten ten ten ten"
+    "one one one one one one one one six six six six eight eight eight eight eleven eleven twelve twelve twelve twelve twelve twelve"
+    "one one one one one one one one six six six six eight eight eight eight eleven eleven twelve twelve twelve twelve twelve twelve"
+    "one one one one one one one one six six six six eight eight eight eight thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen"
+    "two two two two three three three three six six six six eight eight eight eight thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen"
+    "two two two two four four four four six six six six eight eight eight eight thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen"
+    "two two two two four four four four six six six six eight eight eight eight thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen"
+    "two two two two four four four four nine nine nine nine nine nine nine nine thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen"
+    "five five five five five five five five nine nine nine nine nine nine nine nine thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen"
+    "five five five five five five five five nine nine nine nine nine nine nine nine thirteen thirteen thirteen thirteen thirteen thirteen thirteen thirteen"
+    "five five five five five five five five nine nine nine nine nine nine nine nine fourteen fourteen fourteen fourteen fourteen fourteen fourteen fourteen ";
+}
+
+.area1,
+.area2,
+.area3,
+.area4,
+.area5,
+.area6,
+.area7,
+.area8,
+.area9,
+.area10,
+.area11,
+.area12,
+.area13,
+.area14 {
+  border-radius: 10px;
+}
+
+.area1 {
+  grid-area: one;
+  background-color: purple;
+}
+
+.area2 {
+  grid-area: two;
+  background-color: green;
+}
+
+.area3 {
+  grid-area: three;
+  background-color: lightskyblue;
+}
+
+.area4 {
+  grid-area: four;
+  background-color: red;
+}
+
+.area5 {
+  grid-area: five;
+  background-color: green;
+}
+
+.area6 {
+  grid-area: six;
+  background-color: green;
+}
+
+.area7 {
+  grid-area: seven;
+  background-color: lightskyblue;
+}
+
+.area8 {
+  grid-area: eight;
+  background-color: red;
+}
+
+.area9 {
+  grid-area: nine;
+  background-color: purple;
+}
+
+.area10 {
+  grid-area: ten;
+  background-color: green;
+}
+
+.area11 {
+  grid-area: eleven;
+  background-color: lightskyblue;
+}
+
+.area12 {
+  grid-area: twelve;
+  background-color: red;
+}
+
+.area13 {
+  grid-area: thirteen;
+  background-color: purple;
+}
+
+.area14 {
+  grid-area: fourteen;
+  background-color: lightskyblue;
+}
+
+.adjust {
+  transform: translateY(0px);
+}

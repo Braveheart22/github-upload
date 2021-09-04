@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue !important;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    /* padding-bottom: 10px; */
+    padding: 0 20px 10px 20px;
+}
+
+button {
+    background-color: #D84848;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+span {
+    color: #165889;
+}
+
+hr {
+    width: 100%;
+    columns: #C9C9C9;
+}
+
+.main-container {
+    width: 100%;
+    text-align: center;
+}
+
+.header-container {
+    background-image: url(./images/responsive-background.jpg);
+}
+
+.header {
+    min-width: 300px;
+    margin: auto;
+}
+
+.synopsis, .needs {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    color: #2d2d2d;
+    padding-bottom: 20px;
+}
+
+.newspaper {
+    columns: 2 200px;
+    padding-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    background-color: #B371EF;
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 400px;
+    min-width: 200px;
+    max-width: 250px;
+    color: #2D2D2D;
+    padding: 25px;
+}
+
+.card img {
+    max-width: 300px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-us {
+    background-color: #0081FF;
+}
+
+.email {
+    padding-bottom: 40px;
+}
+
+.rad-stuff {
+    background-color: #B371EF;
+}
+
+.contact-us p, .rad-stuff p {
+    max-width: 500px;
+    margin: auto;
+}
+
+.footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 500px;
+        min-height: 450px;
+    }
+
+    .card img {
+        max-width: 500px;
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rad-stuff {
+        padding-bottom: 20px;
+    }
+}
